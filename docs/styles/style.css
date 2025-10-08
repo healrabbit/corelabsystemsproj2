@@ -5,3 +5,7 @@ body{
 p{
     font-family:'Helvetica', sans-serif;
 }
+
+#lyrics{
+    font-size: 10px;
+}
