@@ -5,15 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="styles/style.css">
+      <style>
+      body{
+        background:{{bgcolor}};
+      }
+      scrolltext:p{
+        color:{{secondarycolor}};
+      }
+      a{
+        font-weight:100;
+          transition: color 0.3s ease;
+}
+      a:link{
+color:{{secondarycolor}}
+      }
+      a:visited{
+color:{{secondarycolor}}
+      }
+      a:hover{
+color:{{thirdcolor}}
+      }
+      </style>
   </head>  
   <body>
-<h1 style="color:pink"> {{title}} by {{author}}</h1>
-<h4> Released: {{ day }} </h4>
-<h4> Genre:{{genre}} </h4>
+  <main>
+  <div class= grid>
+  <div id="leftside">
+<h1 style="color:{{thirdcolor}}"> {{title}} by {{author}}</h1>
+<h4 style="color:{{secondarycolor}}"> Released: {{ day }} </h4>
+<h4 style="color:{{secondarycolor}}"> Genre: {{genre}} </h4>
+<div style="width:60%; margin-left:40px"> <p style="color:{{maincolor}}; font-size:20px"> {{why}}</p> </div>
+<p>  &nbsp;  &nbsp; </p>
+<a href="{{listen}}"> listen here </a> <p>
+<p style="color:{{secondarycolor}}">+ </p>
+<a href="index.html">directory </a>
+</div>
 
-<main>
-<p id="lyrics"> Lyrics: {{content | safe }} </p> </p>
 
+<div id="rightside">
+<p style="color:{{thirdcolor}}; font-weight:100 "> Lyrics:</p>
+<div class="scrollcontainer">
+<div class="scrolltext" style="color:{{secondarycolor}}"> <p id="lyrics">  <p> &nbsp; <p> {{content | safe }}༘⋆ <p>  {{content | safe }}</p> </p>
+</div>
+</div>
+<div style="text-align:right; margin-right:5%">
+<p>
+<img src="/images/{{cover}}" style="width:60%">
+</div>
+</div>
+</div>
 </main>
   </body>
   </html>

@@ -1,12 +1,18 @@
 ---
 layout: songs.njk
-title:  Pure
+title:  pure
 author: 8485
-day: April 14, 2021
+day: November 18, 2020
 genre: Synth-Pop
 tags: song
 permalink: song2.html
-why: This is the song that I weep to for comfort when I feel like I am not enough, like hugging a plush toy tight.
+why: This is the song that I weep to for comfort when I feel like I am not enough, like hugging a plush toy tight. It was my top song on Spotify Wrapped for three years in a row, 2021-2023. I like that 8485 says it was written about trying to be christlike but not knowing if you can. I'm not religious but I feel a strange resonance with it. Just that general feeling of wanting to feel perfect and virtuous and clean. Also, although the song itself released on soundcloud in 2020, it was released officially on the album "plague town" on April 14, 2021, just one day before my birthday. I thought that was so special. 
+listen: https://on.soundcloud.com/JuJG0QZ9iTec0I2vbV
+maincolor: "#252725"
+secondarycolor: white
+thirdcolor: "#88949e"
+bgcolor: "#706b4a"
+cover: pureimg.png
 ---
 <div style="font-size:10px;">
 There was a time once, I thought I could be like you

@@ -3,16 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>Songs That Meant A Lot At Some Point And Still Do</title>
     <link rel="stylesheet" href="styles/style.css">
+    <style>
+    a{
+     display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  transition: color 0.3s ease;
+    }
+    #home:hover{
+ color:pink;
+    }
+          a:link{
+color:navy
+      }
+      a:visited{
+color:navy
+      }
+      a:hover{
+          color: var(--hover-color);
+      }
+    </style>
 </head>
 <body>
-<h3> Songs: </h3>
+<div class="linkslinks">
 <ul>
 {% for item in collections.song %}
-<li><a href="{{item.data.permalink}}"> {{item.data.title}}</a> </li>
+<li><a href="{{item.data.permalink}}" style="--hover-color: {{ item.data.thirdcolor }};"> <img src="/images/{{item.data.cover}}" style="width:40px"> {{item.data.title}} </a> </li>
 {% endfor %}
+<p> &nbsp; </p>
+<a id="home" href="https://healrabbit.github.io/coresystemslabfall25/"> home</a>
 </ul>
 
+
+</div>
 </body>
 </html>
