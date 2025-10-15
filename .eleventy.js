@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig) {
   return {
     dir: {
       input: ".",
-   output: "_docs"  // GitHub Pages will serve from this
+   output: "docs"  // GitHub Pages will serve from this
     }
   };
 };
